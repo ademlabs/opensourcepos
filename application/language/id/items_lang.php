@@ -57,6 +57,7 @@ $lang["items_location"] = "Lokasi Barang";
 $lang["items_low_inventory_items"] = "Daftar Stock Rendah";
 $lang["items_manually_editing_of_quantity"] = "Perubahan jumlah Stok secara manual";
 $lang["items_name"] = "Nama Barang";
+$lang["items_description"] = "Deskripsi";
 $lang["items_name_required"] = "Nama item wajib diisi";
 $lang["items_new"] = "Buat Item Baru";
 $lang["items_no_description_items"] = "Produk/Item tidak ada deskripsi";

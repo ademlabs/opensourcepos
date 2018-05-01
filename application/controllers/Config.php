@@ -297,6 +297,7 @@ class Config extends Secure_Controller
 			'suggestions_first_column' => $this->input->post('suggestions_first_column'),
 			'suggestions_second_column' => $this->input->post('suggestions_second_column'),
 			'suggestions_third_column' => $this->input->post('suggestions_third_column'),
+			'suggestions_fourth_column' => $this->input->post('suggestions_fourth_column'),
 			'giftcard_number' => $this->input->post('giftcard_number'),
 			'derive_sale_quantity' => $this->input->post('derive_sale_quantity') != NULL,
 			'custom1_name' => $this->input->post('custom1_name'),

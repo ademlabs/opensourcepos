@@ -57,6 +57,7 @@ $lang["items_location"] = "Helyszín";
 $lang["items_low_inventory_items"] = "Kifogyott term.";
 $lang["items_manually_editing_of_quantity"] = "Mennyiség módosítása manuálisan";
 $lang["items_name"] = "Terméknév";
+$lang["items_description"] = "Leirás";
 $lang["items_name_required"] = "Terméknév kötelező mező";
 $lang["items_new"] = "Új termék";
 $lang["items_no_description_items"] = "Leirás nélk.";

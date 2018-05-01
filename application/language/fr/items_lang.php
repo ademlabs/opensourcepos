@@ -57,6 +57,7 @@ $lang["items_location"] = "Localisation";
 $lang["items_low_inventory_items"] = "Article a faible stock";
 $lang["items_manually_editing_of_quantity"] = "Édition Manuelle de Quantité";
 $lang["items_name"] = "Nom";
+$lang["items_description"] = "Description";
 $lang["items_name_required"] = "Le Nom est requis";
 $lang["items_new"] = "Nouvel Item";
 $lang["items_no_description_items"] = "Article sans Description";

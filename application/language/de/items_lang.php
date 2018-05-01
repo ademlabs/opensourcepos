@@ -57,6 +57,7 @@ $lang["items_location"] = "Ort";
 $lang["items_low_inventory_items"] = "nicht am Lager";
 $lang["items_manually_editing_of_quantity"] = "Manuelle Bestandesänderung";
 $lang["items_name"] = "Artikelname";
+$lang["items_description"] = "Bezeichnung";
 $lang["items_name_required"] = "Artikelname ist erforderlich";
 $lang["items_new"] = "Neuer Artikel";
 $lang["items_no_description_items"] = "Artikel ohne Bezeichnung";

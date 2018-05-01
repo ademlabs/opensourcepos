@@ -479,6 +479,11 @@ class Item extends CI_Model
 		{
 			$seed .= ',' . $this->config->item('suggestions_third_column');
 		}
+
+		if($this->config->item('suggestions_fourth_column') !== '')
+		{
+			$seed .= ',' . $this->config->item('suggestions_fourth_column');
+		}		
 		
 		return $seed;
 	}
@@ -488,6 +493,7 @@ class Item extends CI_Model
 		$label1 = $this->config->item('suggestions_first_column');
 		$label2 = $this->config->item('suggestions_second_column');
 		$label3 = $this->config->item('suggestions_third_column');
+		$label4 = $this->config->item('suggestions_fourth_column');
 
 		$label = $result_row->$label1;
 		
@@ -500,6 +506,11 @@ class Item extends CI_Model
 		{
 			$label .= ' | '. $result_row->$label3;
 		}	
+
+		if($label4 !== '')
+		{
+			$label .= ' | '. $result_row->$label4;
+		}			
 		
 		return $label;
 	}	
@@ -529,6 +540,21 @@ class Item extends CI_Model
 		foreach($this->db->get()->result() as $row)
 		{
 			$suggestions[] = array('value' => $row->item_id, 'label' => $this->get_search_suggestion_label($row));
+		}
+
+		//Search by description
+		if($filters['search_description'] != FALSE)
+		{
+			$this->db->select($this->get_search_suggestion_format('item_id, name, description'));
+			$this->db->from('items');
+			$this->db->where('deleted', $filters['is_deleted']);
+			$this->db->where_in('item_type', $non_kit); // standard, exclude kit items since kits will be picked up later
+			$this->db->like('description', $search);
+			$this->db->order_by('description', 'asc');
+			foreach($this->db->get()->result() as $row)
+			{
+				$suggestions[] = array('value' => $row->item_id, 'label' => $this->get_search_suggestion_label($row));
+			}	
 		}
 
 		if(!$unique)

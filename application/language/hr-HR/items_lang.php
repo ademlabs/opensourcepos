@@ -57,6 +57,7 @@ $lang["items_location"] = "Mjesto";
 $lang["items_low_inventory_items"] = "Rasprodaja artikala";
 $lang["items_manually_editing_of_quantity"] = "Ručno uređivanje količine";
 $lang["items_name"] = "Naziv artikla";
+$lang["items_description"] = "Opisa";
 $lang["items_name_required"] = "Naziv artikla je potreban";
 $lang["items_new"] = "Novi artikal";
 $lang["items_no_description_items"] = "Artikal nema opisa";

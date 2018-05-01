@@ -249,6 +249,7 @@ $lang["config_suggestions_first_column"] = "Column 1";
 $lang["config_suggestions_layout"] = "Search Suggestions Layout";
 $lang["config_suggestions_second_column"] = "Column 2";
 $lang["config_suggestions_third_column"] = "Column 3";
+$lang["config_suggestions_fourth_column"] = "Column 4";
 $lang["config_table"] = "Table";
 $lang["config_table_configuration"] = "Table Configuration";
 $lang["config_takings_printer"] = "Receipt Printer";

@@ -138,6 +138,7 @@
 						<div class='col-sm-2'>
 							<?php echo form_dropdown('suggestions_first_column', array(
 								'name' => $this->lang->line('items_name'),
+								'description' => $this->lang->line('items_description'),
 								'item_number' => $this->lang->line('items_number_information'),
 								'unit_price' => $this->lang->line('items_unit_price')
 							),
@@ -148,6 +149,7 @@
 							<?php echo form_dropdown('suggestions_second_column', array(
 									'' => $this->lang->line('config_none'),
 									'name' => $this->lang->line('items_name'),
+									'description' => $this->lang->line('items_description'),
 									'item_number' => $this->lang->line('items_number_information'),
 									'unit_price' => $this->lang->line('items_unit_price')
 							),
@@ -158,11 +160,23 @@
 							<?php echo form_dropdown('suggestions_third_column', array(
 									'' => $this->lang->line('config_none'),
 									'name' => $this->lang->line('items_name'),
+									'description' => $this->lang->line('items_description'),
 									'item_number' => $this->lang->line('items_number_information'),
 									'unit_price' => $this->lang->line('items_unit_price')
 							),
 							$this->config->item('suggestions_third_column'), array('class' => 'form-control input-sm')); ?>
 						</div>
+						<label class="control-label col-sm-1"><?php echo $this->lang->line('config_suggestions_fourth_column').' '; ?></label>
+						<div class='col-sm-2'>
+							<?php echo form_dropdown('suggestions_fourth_column', array(
+									'' => $this->lang->line('config_none'),
+									'name' => $this->lang->line('items_name'),
+									'description' => $this->lang->line('items_description'),
+									'item_number' => $this->lang->line('items_number_information'),
+									'unit_price' => $this->lang->line('items_unit_price')
+							),
+							$this->config->item('suggestions_fourth_column'), array('class' => 'form-control input-sm')); ?>
+						</div>						
 					</div>
 				</div>
 			</div>
