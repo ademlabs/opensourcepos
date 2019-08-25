@@ -303,7 +303,7 @@ class Item extends CI_Model
 		{
 			//Get empty base parent object, as $item_id is NOT an item
 			$item_obj = new stdClass();
-
+	
 			//Get all the fields from items table
 			foreach($this->db->list_fields('items') as $field)
 			{
@@ -505,8 +505,7 @@ class Item extends CI_Model
 			$seed .= ',' . $this->config->item('suggestions_third_column');
 		}
 
-		if($this->conf		{
-			ig->item('suggestions_fourth_column') !== '')
+		if($this->config->item('suggestions_fourth_column') !== '')
 		{
 			$seed .= ',' . $this->config->item('suggestions_fourth_column');
 		}		
